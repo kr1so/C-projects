@@ -1,1 +1,13 @@
-﻿
+﻿int a = 13;
+int b = 23;
+int c = 33;
+int d = 43;
+int e = 53;
+int max = a;
+if (a > max) max = a;
+if ( b > max) max = b;
+if ( c > max) max = c;
+if ( d > max ) max = d;
+if ( e > max) max = e;
+Console.Write("Максимальное число:");
+Console.WriteLine(max);
