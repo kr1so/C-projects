@@ -10,4 +10,4 @@ if ( c > max) max = c;
 if ( d > max ) max = d;
 if ( e > max) max = e;
 Console.Write("Максимальное число:");
-Console.WriteLine ((max);
+Console.WriteLine (max);
