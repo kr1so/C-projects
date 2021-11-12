@@ -1,39 +1,42 @@
 ﻿Console.Clear();
-
-int count = 0;
-
-int distance = 10000;
-
-int firstFriendSpeed == x, 
-x = 1;
-
-int secondFriendSpeed == y, 
-y = 2;
-
-int dogSpeed == z, 
-z = 5;
-
-int time = 0;
-
-int friend = 2;
-
+System.Console.WriteLine("Задача про двух друзей и собаку");
+System.Console.WriteLine(" Есть два друга, которые движутся с разной скоростью."
+            + " У них есть собака, которая бегает периодически от одного друга к другому."
+            + " Пока собака бежит ко второму другу, один тоже движется."
+            + " Пока два друга идут друг до друга, "
+            + " через сколько раз перебеганий собаки они встретятся?");
+int count = 0, distance = 10000, firstFriendSpeed = 1, secondFriendSpeed = 2, dogSpeed = 5, time = 0,  friend = 2;
 while (distance > 10)
 {
-     if (friend = 1)
-     {
-         time = distance / (firstFriendSpeed + dogSpeed),
+    for (time = 0; friend == 1; count++)
+    {
+         time = distance / (firstFriendSpeed + dogSpeed);
          friend = 2;
-     }
-      
-     if (friend = 2)
+    }
+         for (time = 0; friend == 2; count++)
+         {
+            time = distance / (secondFriendSpeed + dogSpeed);
+            friend = 1;
+         }
+     distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
+}
+string result = $" Получилось {count} раз";
+System.Console.WriteLine(result);
+/* while (distance > 10)
+{
+     if (friend == 1)
      {
-         time = distance / (secondFriendSpeed + dogSpeed),
-         friend = 1;
+         time = distance / (firstFriendSpeed + dogSpeed);
+         friend = 2;
+         count++;
+     }
+     if (friend == 2)
+     {
+        time = distance / (secondFriendSpeed + dogSpeed);
+        friend = 1;
+        count++;
      } 
      distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
-
-      
-    Console.WriteLine("получилось раз");
-    count = count+1;
-
 }
+string result = $" Получилось {count} раз";
+System.Console.WriteLine(result); */
